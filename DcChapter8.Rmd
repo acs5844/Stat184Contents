@@ -1,0 +1,30 @@
+---
+title: "R Notebook"
+author: "Aaron Schlegel"
+date: "October 22, 2019"
+output: html_notebook
+---
+
+## DC Exercises Chapter 8: 8.1, 8.2, 8.3
+### 8.1
+a.) 1 and 2
+b.) 1 and 2
+c.) 1
+d.) 5
+e.) 3
+f.) 2 and 4
+g.) 1 and 2
+h.) 5
+i.) 4
+
+### 8.2
+```{r}
+CPS85 %>%
+  ggplot(aes(x = age, y = wage)) + geom_point(aes(shape = married)) + facet_wrap(~ sector) + theme(legend.position = "top")
+```
+
+```{r}
+
+
+```
+
