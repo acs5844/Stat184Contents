@@ -24,7 +24,47 @@ CPS85 %>%
 ```
 
 ```{r}
-
-
+CPS85 %>%
+  ggplot(aes(x = age, y = wage)) + geom_point() + facet_grid(cols = vars(married), rows = vars(sex))
 ```
+
+### 8.3
+
+A.)
+```{r}
+CPS85 %>%
+  ggplot(aes(x=age,y=wage)) + geom_point()
+```
+
+B.)
+```{r}
+HappinessIndex %>%
+  WorldMap(key = "country", fill = "corruption")
+```
+
+C.)
+```{r}
+CPS85 %>%
+  ggplot(aes(x=age,y=wage)) + geom_point(aes(shape=sex)) + facet_grid(rows = vars(married))
+```
+
+D.)
+```{r}
+CPS85 %>%
+  ggplot(aes(x=age, y=wage)) + geom_point(aes(shape=married))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
