@@ -28,9 +28,24 @@ CPS85 %>%
 ```
 
 
-
 ### Exercise 14.3
 The most likely height for women based on the given graph is around 1.6 meters.  For men, the most likely height is around 1.7 or 1.8.
+
+
+### Exercise 14.7
+```{r}
+CPS85 %>%
+  ggplot(aes(x=educ,y=wage))+geom_point()+aes(colour=sex) + stat_smooth(method=lm) 
+```
+
+
+### Exercise 14.10
+```{r}
+ggplot(Galton, aes(x = height, group = sex) ) + geom_density(aes(color = sex, fill = sex), alpha = 0.5)
+```
+
+
+
 
 
 
