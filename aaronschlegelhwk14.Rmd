@@ -1,0 +1,42 @@
+---
+title: "DC Exercises"
+author: "Aaron Schlegel"
+subtitle: DataComputing Chapter 14
+output: html_notebook
+---
+
+## Assigned Exercises
+
+- DC Chapter 14 Exercises: 14.1, 14.3, 14.7, 14.10
+
+## Front Matter
+```{r echo=FALSE}
+rm(list = ls())
+
+library(mosaic)
+library(tidyverse)
+library(DataComputing)
+```
+
+
+## Chapter 14
+
+### Exercise 14.1
+```{r}
+CPS85 %>%
+  ggplot(aes(x=sex, y=wage)) + geom_boxplot(aes(fill=sex))
+```
+
+
+
+### Exercise 14.3
+The most likely height for women based on the given graph is around 1.6 meters.  For men, the most likely height is around 1.7 or 1.8.
+
+
+
+
+
+
+
+
+
